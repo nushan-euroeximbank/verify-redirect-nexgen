@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<p>Redirecting...</p>
+<p>If you are not redirected, please click <a href="https://nexgenrecruit.com/verify">here</a>.</p>
+
+<script>
+  import { onMount } from "svelte";
+
+  onMount(() => {
+    setTimeout(() => {
+      window.location.href = "https://nexgenrecruit.com/verify";
+    }, 500);
+  });
+</script>
